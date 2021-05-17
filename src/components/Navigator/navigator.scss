@@ -1,0 +1,68 @@
+.navigator {
+  position: absolute;
+  bottom: 62px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all linear 0.3s;
+  &-item {
+    height: 17px;
+    width: 17px;
+    mix-blend-mode: color-dodge;
+    border-radius: 50%;
+    background: rgb(139, 127, 127);
+    margin: 7px auto;
+    position: relative;
+    transition: all linear 0.3s;
+    font-size: 15px;
+    &::before {
+      position: absolute;
+      content: attr(data-title);
+      top: 50%;
+      transform: translate(-100%, -60%);
+      color: rgb(211, 3, 3);
+      font-weight: bold;
+      left: -50%;
+      white-space: nowrap;
+      opacity: 0;
+      transition: all linear 0.3s;
+    }
+    &.active {
+      width: 22px;
+      height: 22px;
+      margin: 9px auto;
+      background: rgb(27, 26, 26);
+      border: 1px solid rgb(149, 138, 138);
+      font-size: 17px;
+      transition-delay: 0;
+      &::before {
+        text-decoration: underline;
+        animation: showTitle 1 4s 0.3s linear;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      width: 22px;
+      height: 22px;
+      margin: 9px auto;
+      &::before {
+        opacity: 1;
+        transition: all linear 0.3s;
+      }
+    }
+    &:active {
+      transform: scale(1.2);
+      transition-delay: 0.3s;
+    }
+  }
+}
+
+@keyframes showTitle {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
