@@ -11,7 +11,8 @@
     width: 17px;
     mix-blend-mode: color-dodge;
     border-radius: 50%;
-    background: rgb(139, 127, 127);
+    background: transparent;
+    border: 3px solid #C11E43;
     margin: 7px auto;
     position: relative;
     transition: all linear 0.3s;
@@ -21,7 +22,7 @@
       content: attr(data-title);
       top: 50%;
       transform: translate(-100%, -60%);
-      color: rgb(211, 3, 3);
+      color: #C11E43;
       font-weight: bold;
       left: -50%;
       white-space: nowrap;
@@ -32,8 +33,8 @@
       width: 22px;
       height: 22px;
       margin: 9px auto;
-      background: rgb(27, 26, 26);
-      border: 1px solid rgb(149, 138, 138);
+      background: #C11E43;
+      border: 1px solid #C11E43;
       font-size: 17px;
       transition-delay: 0;
       &::before {
