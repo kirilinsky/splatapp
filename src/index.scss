@@ -14,7 +14,6 @@ body {
   height: 100vh;
   overflow: hidden;
 }
- 
 
 .view {
   overflow: hidden;
@@ -27,4 +26,22 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+
+/* container style */
+.container {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* logo */
+.logo {
+  position: fixed;
+  top: 0;
+  left: 58px;
+  width: 60px;
+  height: 60px;
+  background: red;
+  z-index: 99;
 }
