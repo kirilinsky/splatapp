@@ -1,15 +1,14 @@
 import React from "react";
 import styles from "./view.module.scss";
-import "./style.scss";
 
-import icon from '../../assets/img/icon.png';
+import icon from "../../assets/img/icon.png";
 
 const Second = () => {
   return (
     <div className="view">
       <div className="container">
         <div className={styles.view}>
-          <h2 className={styles.view__title}>Наши услуги</h2>
+          <h2 className={styles.view__title}>Как это работает</h2>
           <div className="view-box">
             <div className="view-box-card">
               <img src={icon} alt="" className="view-box-card__icon" />

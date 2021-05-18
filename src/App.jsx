@@ -5,9 +5,10 @@ import First from "./Views/First";
 import Second from "./Views/Second";
 import Third from "./Views/Third";
 
-import logo from "./assets/img/logo.png"; 
+import logo from "./assets/img/logo.png";
+import Four from "./Views/Four";
 
-const pages = ["Главная", "Наши услуги", "Фильтр"];
+const pages = ["Главная", "Наши услуги", "Фильтр", "Попробовать"];
 
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -28,13 +29,13 @@ function App() {
         <First />
         <Second />
         <Third />
+        <Four />
       </ReactPageScroller>
       <Navigator
         pages={pages}
         action={handlePageChange}
         currentPage={currentPage}
       />
-      
     </div>
   );
 }
