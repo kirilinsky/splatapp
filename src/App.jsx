@@ -5,7 +5,7 @@ import First from "./Views/First";
 import Second from "./Views/Second";
 import Third from "./Views/Third";
 
-import logo from "./assets/img/logo.png";
+import logo from "./assets/img/logo.png"; 
 
 const pages = ["Главная", "Наши услуги", "Фильтр"];
 
