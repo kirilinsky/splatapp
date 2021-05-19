@@ -39,7 +39,7 @@ body {
   &-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     @media screen and (max-width: 798px) {
       flex-direction: column;
