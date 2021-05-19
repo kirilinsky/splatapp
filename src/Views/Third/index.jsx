@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "./view.module.scss";
 
 import before from "./assets/img/before.png";
 import after from "./assets/img/after.png";
+import ReactCompareImage from "react-compare-image";
 
 const Third = () => {
   return (

@@ -2,8 +2,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  color: #293152;
+  color: #fff;
 
   &__title {
     text-align: center;
@@ -39,7 +38,7 @@
 }
 
 .download {
-  &__text { 
+  &__text {
     text-align: center;
     font-size: 36px;
     line-height: 43px;
