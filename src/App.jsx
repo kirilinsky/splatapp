@@ -3,7 +3,7 @@ import ReactPageScroller from "react-page-scroller";
 import Navigator from "./components/Navigator";
 import First from "./Views/First";
 import Second from "./Views/Second";
-import Third from "./Views/Third";
+import Compare from "./Views/Compare";
 import Four from "./Views/Four";
 
 import logo from "./assets/img/logo.png";
@@ -29,7 +29,7 @@ function App() {
         <First />
         <Four />
         <Second />
-        <Third />
+        <Compare />
       </ReactPageScroller>
       <Navigator
         pages={pages}

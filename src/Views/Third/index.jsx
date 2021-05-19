@@ -6,7 +6,7 @@ import after from "./assets/img/after.png";
 import ReactCompareImage from "react-compare-image";
 import classNames from "classnames";
 
-const Third = () => {
+const Compare = () => {
   return (
     <div className="view">
       <div className={styles.withfooter}>
@@ -34,4 +34,4 @@ const Third = () => {
   );
 };
 
-export default Third;
+export default Compare;
