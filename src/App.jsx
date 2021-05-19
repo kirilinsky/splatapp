@@ -27,9 +27,10 @@ function App() {
         pageOnChange={handlePageChange}
       >
         <First />
+        <Four />
         <Second />
         <Third />
-        <Four />
+       
       </ReactPageScroller>
       <Navigator
         pages={pages}

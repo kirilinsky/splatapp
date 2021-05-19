@@ -4,15 +4,27 @@
   flex-direction: column;
   justify-content: space-evenly;
   background: #fff;
-
+  color: #000;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__title {
     text-align: center;
     font-size: 39px;
     line-height: 47px;
     font-weight: normal;
     margin-bottom: 30px;
+    @media screen and (max-width: 798px) {
+      font-size: 20px;
+      line-height: 1.1;
+    }
   }
   &_compare {
-    width: 45%;
+    width: 66%;
+    border-radius: 9px;
+    overflow: hidden;
+    max-width: 400px;
   }
 }

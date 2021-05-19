@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./view.module.scss";
 
-import icon from "../../assets/img/icon.png";
+import icon from "../../assets/img/check.svg";
 
 const Second = () => {
   return (

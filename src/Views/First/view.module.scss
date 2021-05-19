@@ -1,5 +1,4 @@
 .view {
-  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,6 +7,11 @@
     margin-top: 41px;
     font-size: 27px;
     line-height: 32px;
+    @media screen and (max-width: 798px) {
+      font-size: 16px;
+      line-height: unset;
+      margin-top: 8px;
+    }
   }
 }
 
@@ -42,6 +46,9 @@
   color: white;
 
   transform-style: preserve-3d;
+  @media screen and (max-width: 798px) {
+    height: 84%;
+  }
 }
 
 .container {
@@ -50,27 +57,45 @@
   justify-content: space-around;
 
   height: 630px;
+  @media screen and (max-width: 798px) {
+    flex-direction: column;
+    height: 100vh;
+  }
 }
 .side {
   height: 100%;
   justify-content: center;
+  @media screen and (max-width: 798px) {
+    height: auto;
+  }
 }
-
-.left {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  &_circle {
-    width: 370px;
-    height: 370px;
-    background: #c11e43;
-    border-radius: 50%;
+.right {
+  @media screen and (max-width: 798px) {
+    height: 73vh;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+  }
+}
+.left {
+  max-width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (max-width: 798px) {
+    max-width: 60%;
+    flex-grow: 1;
+  }
+  &_circle {
+    display: flex;
+    align-items: center;
+
     font-size: 46px;
     line-height: 55px;
+    @media screen and (max-width: 798px) {
+      font-size: 25px;
+      line-height: unset;
+    }
   }
 }
 
