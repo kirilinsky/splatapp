@@ -1,46 +1,40 @@
-import React from "react";
+import React from 'react'
 import styles from "./view.module.scss";
 
-import icon from "../../assets/img/icon.png";
+import qr from './assets/img/qr.png';
+import appstore from './assets/img/appstore.png';
+import googleplay from './assets/img/googleplay.png';
+
 
 const Second = () => {
   return (
-    <div className="view">
+    <div className={styles.view}>
       <div className="container">
-        <div className={styles.view}>
-          <h2 className={styles.view__title}>Как это работает</h2>
-          <div className="view-box">
-            <div className="view-box-card">
-              <img src={icon} alt="" className="view-box-card__icon" />
-              <span className="view-box-card__text">
-                Распознавание цвета зубов с возможностью мелирования
-              </span>
-            </div>
-            <div className="view-box-card">
-              <img src={icon} alt="" className="view-box-card__icon" />
-              <span className="view-box-card__text">
-                SMART «примерка» цвета зубов на себе по шкале Vita
-              </span>
-            </div>
-            <div className="view-box-card">
-              <img src={icon} alt="" className="view-box-card__icon" />
-              <span className="view-box-card__text">
-                Персональные рекомендации исходя из желаемого цвета отбеливания
-                зубов
-              </span>
-            </div>
-            <div className="view-box-card">
-              <img src={icon} alt="" className="view-box-card__icon" />
-              <span className="view-box-card__text">
-                Отслеживание динамики изменения цвета эмали зубов через личное
-                приложение
-              </span>
-            </div>
+        <h2 className={styles.view__title}>Инновационная разработка SPLAT</h2>
+        <div className={styles.text}>
+          <div>
+            <p className={styles.text__description}>
+              Приложение с помощью нейросети позволяет применить на себе цвет различных оттенков по шкале Vita 3D Master (или Vitapan). 
+            </p>
+            <p className={styles.text__description}>
+              Примерка цвета происходит через камеру на смартфоне. приложение построит персонализированную карту зубного ряда человека и с помощью алгоритма ПОменяет цвет эмали в зависимости от выбора человека
+            </p>
+          </div>
+          <div className={styles.qr}>
+            <h3 className={styles.qr__text}>Сканируй QR-код</h3>
+            <img className={styles.qr__image} src={qr} alt="QR" />
+          </div>
+        </div>
+        <div className={styles.download}>
+          <h3 className={styles.download__text}>SPLAT APP уже доступен</h3>
+          <div className={styles.download_images}>
+            <img src={appstore} alt="appstore" />
+            <img src={googleplay} alt="google-play" />
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Second;
+export default Second

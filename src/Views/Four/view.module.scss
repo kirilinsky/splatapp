@@ -1,7 +1,26 @@
 .view {
-  background: #293152;
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: space-evenly;
+  background: #fff;
+
+  &__title {
+    text-align: center;
+    font-size: 39px;
+    line-height: 47px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #293152;
+  }
+
+  &_wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &_compare {
+    width: 60%;
+  }
 }

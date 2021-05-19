@@ -4,9 +4,10 @@ import Navigator from "./components/Navigator";
 import First from "./Views/First";
 import Second from "./Views/Second";
 import Third from "./Views/Third";
+import Four from "./Views/Four";
+import Five from "./Views/Five";
 
 import logo from "./assets/img/logo.png";
-import Four from "./Views/Four";
 
 const pages = ["Главная", "Наши услуги", "Фильтр", "Попробовать"];
 
@@ -30,6 +31,7 @@ function App() {
         <Second />
         <Third />
         <Four />
+        <Five />
       </ReactPageScroller>
       <Navigator
         pages={pages}

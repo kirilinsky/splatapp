@@ -9,12 +9,9 @@ const First = () => {
       <div className={styles.view}>
         <div className={classNames("container", styles.container)}>
           <div className={classNames(styles.left, styles.side)}>
-            <div className={styles.left_circle}>Подбор типа отбеливания</div>
+            <div className={styles.left_text}>Подбор типа отбеливания</div>
             <div className={styles.view__description}>
-              Подбор типа отбеливания Далеко-далеко за словесными горами в
-              стране гласных и согласных живут рыбные тексты. Пор страну диких
-              моей, даже путь журчит? Города, встретил заголовок рыбными, что
-              имени страну безорфографичный мир, жаренные строчка собрал сих.
+              Приложение для ухода за полостью рта
             </div>
           </div>
 

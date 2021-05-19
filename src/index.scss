@@ -39,7 +39,7 @@ body {
   &-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     &-card {
       display: flex;
@@ -51,6 +51,7 @@ body {
       &__text {
         font-size: 25px;
         line-height: 30px;
+        max-width: 385px;
       }
 
       &__icon {
