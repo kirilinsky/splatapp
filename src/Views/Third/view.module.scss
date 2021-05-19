@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: #fff;
-  color: #000;
+
   &__wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    justify-content: space-around;
   }
   &__title {
     text-align: center;
@@ -16,6 +17,7 @@
     line-height: 47px;
     font-weight: normal;
     margin-bottom: 30px;
+    color: #000;
     @media screen and (max-width: 798px) {
       font-size: 20px;
       line-height: 1.1;
@@ -27,4 +29,23 @@
     overflow: hidden;
     max-width: 400px;
   }
+}
+
+.withfooter {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.compare {
+  height: 70vh;
+  background: #fff;
+}
+.footer {
+  height: 30vh;
+  background: #293152;
+}
+
+.button {
+  padding: 13px 29px;
+  margin-top: 13px;
 }
