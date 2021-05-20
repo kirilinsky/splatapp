@@ -1,0 +1,22 @@
+.header {
+  
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 454px;
+  flex: 1;
+  &__item {
+    font: 400 13px/16px 'Montserrat', sans-serif;
+    color: #1F262C;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

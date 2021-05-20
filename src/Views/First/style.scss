@@ -1,0 +1,26 @@
+.main-title {
+  font: 700 53px/60px 'Jost', sans-serif;
+  max-width: 704px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.markets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.mockup {
+  max-width: 500px;
+}

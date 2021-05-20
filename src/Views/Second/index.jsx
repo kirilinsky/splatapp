@@ -1,44 +1,28 @@
-import React from "react";
-import styles from "./view.module.scss";
+import React from "react"
 
-import icon from "../../assets/img/check.svg";
-import classNames from "classnames";
+import './style.scss'
+
+import data from './data'
 
 const Second = () => {
   return (
-    <div className={classNames("view", styles.view)}>
+    <section className="view opportunities">
       <div className="container">
-        <h2 className={styles.view__title}>Как это работает</h2>
-        <div className="view-box">
-          <div className="view-box-card">
-            <img src={icon} alt="" className="view-box-card__icon" />
-            <span className="view-box-card__text">
-              Распознавание цвета зубов с возможностью мелирования
-            </span>
-          </div>
-          <div className="view-box-card">
-            <img src={icon} alt="" className="view-box-card__icon" />
-            <span className="view-box-card__text">
-              SMART «примерка» цвета зубов на себе по шкале Vita
-            </span>
-          </div>
-          <div className="view-box-card">
-            <img src={icon} alt="" className="view-box-card__icon" />
-            <span className="view-box-card__text">
-              Персональные рекомендации исходя из желаемого цвета отбеливания
-              зубов
-            </span>
-          </div>
-          <div className="view-box-card">
-            <img src={icon} alt="" className="view-box-card__icon" />
-            <span className="view-box-card__text">
-              Отслеживание динамики изменения цвета эмали зубов через личное
-              приложение
-            </span>
+        <div className="opportunities-container">
+          <h2 className="section-title"><span className="red">Что</span> умеет приложение?</h2>
+          <div className="opportunities-benefits">
+            {
+              data.map(item => (
+                <div className="opportunities-benefits__item" key={item.id}>
+                  <img className="opportunities-benefits__image" src={require(`./assets/img/${item.img}.svg`).default} alt={item.text} />
+                  <span className="opportunities-benefits__text" >{item.text}</span>
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

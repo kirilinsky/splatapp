@@ -1,14 +1,9 @@
 import { useState } from "react";
 import ReactPageScroller from "react-page-scroller";
-import Navigator from "./components/Navigator";
-import First from "./Views/First";
-import Second from "./Views/Second";
-import Compare from "./Views/Compare";
-import Four from "./Views/Four";
 
-import logo from "./assets/img/logo.png";
+import { First, Second, Third, Fourth, Compare } from './Views'
 
-const pages = ["Главная", "Наши услуги", "Фильтр", "Попробовать"];
+import { Header } from './components'
 
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -21,21 +16,17 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} className="logo" />
+      <Header/>
       <ReactPageScroller
         customPageNumber={currentPage}
         pageOnChange={handlePageChange}
       >
         <First />
-        <Four />
         <Second />
+        <Third />
+        <Fourth />
         <Compare />
       </ReactPageScroller>
-      <Navigator
-        pages={pages}
-        action={handlePageChange}
-        currentPage={currentPage}
-      />
     </div>
   );
 }

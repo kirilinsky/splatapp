@@ -1,0 +1,25 @@
+.download {
+  height: 100vh;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font: 700 45px/50px "Jost", sans-serif;
+    max-width: 550px;
+  }
+
+  &-wrapper {
+    height: 80vh;
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 407px;
+  }
+}

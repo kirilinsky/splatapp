@@ -1,0 +1,34 @@
+.work {
+
+  &-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-steps {
+
+    &__title {
+      color: #C11E43;
+      font: 400 19px/27px "Jost", sans-serif;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      color: #1F262C;
+      font: 400 20px/29px "Montserrat", sans-serif;
+    }
+
+    &__button {
+      width: 98px;
+      height: 4px;
+      background-color: rgba(193, 30, 67, 0.25);
+      border-radius: 14px;
+      border: none;
+
+      &--active {
+        background-color: #C11E43;
+      }
+    }
+  }
+}
