@@ -1,9 +1,8 @@
 import { useState } from "react";
 import ReactPageScroller from "react-page-scroller";
 
-import { First, Second, Third, Fourth, Compare } from './Views'
-
-import { Header } from './components'
+import { First, Second, Third, Fourth, Compare } from "./Views";
+import { Header } from "./components";
 
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -16,12 +15,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
       <ReactPageScroller
         customPageNumber={currentPage}
         pageOnChange={handlePageChange}
       >
-        <First />
+        <First handlePageChange={handlePageChange} />
         <Second />
         <Third />
         <Fourth />

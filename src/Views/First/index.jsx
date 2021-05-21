@@ -1,26 +1,34 @@
 import React from "react";
 
-import './style.scss'
+import "./style.scss";
 
-import phone from './assets/img/phone.png'
-import appstore from '../../assets/img/appstore.svg'
-import googleplay from '../../assets/img/googleplay.svg'
+import phone from "./assets/img/phone.png";
+import appstore from "../../assets/img/appstore.svg";
+import googleplay from "../../assets/img/googleplay.svg";
+import { Header } from "../../components";
 
-const First = () => {
+const First = ({ handlePageChange }) => {
   return (
-    <div className="view">
+    <div className="view first">
+      <Header handlePageChange={handlePageChange} />
       <div className="container">
         <div className="wrapper">
           <div className="download">
             <h1 className="main-title">
-              <span className="red">Скачайте</span> приложение для ухода за полостью рта и <span className="red">попробуйте</span> на себе разные оттенки зубов
+              <span className="red">Скачайте</span> приложение для ухода за
+              полостью рта и <span className="red">попробуйте</span> на себе
+              разные оттенки зубов
             </h1>
             <div className="markets">
               <img src={appstore} alt="Скачать с App Store" />
               <img src={googleplay} alt="Скачать с Google Play" />
             </div>
           </div>
-          <img className="mockup" src={phone} alt="Мокап с приложением внутри" />
+          <img
+            className="mockup"
+            src={phone}
+            alt="Мокап с приложением внутри"
+          />
         </div>
       </div>
     </div>

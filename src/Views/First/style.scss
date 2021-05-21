@@ -1,5 +1,5 @@
 .main-title {
-  font: 700 53px/60px 'Jost', sans-serif;
+  font: 700 53px/60px "Jost", sans-serif;
   max-width: 704px;
 }
 
@@ -15,12 +15,21 @@
   max-width: 400px;
 }
 
-.download {
+.first .download {
   display: flex;
+  height: auto;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .mockup {
   max-width: 500px;
+}
+.view.first {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  .wrapper {
+    height: calc(100vh - 100px);
+  }
 }
