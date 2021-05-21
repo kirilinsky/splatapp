@@ -1,5 +1,5 @@
 .try {
-  background-color: #C11E43;
+  background-color: #c11e43;
 
   &-wrapper {
     display: flex;
@@ -25,7 +25,7 @@
       appearance: none;
       width: 31px;
       height: 31px;
-      background-color: #C11E43;
+      background-color: #c11e43;
       border: 7px solid #fff;
       border-radius: 50%;
     }
@@ -48,6 +48,7 @@
       border: 5px solid #fff;
       box-shadow: 0px 38px 51px -19px rgba(0, 0, 0, 0.14);
       border-radius: 28px;
+      margin-bottom: 22px;
     }
 
     &__item {

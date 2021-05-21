@@ -1,5 +1,4 @@
 .work {
-
   &-slider {
     display: flex;
     align-items: center;
@@ -7,27 +6,29 @@
   }
 
   &-steps {
-
     &__title {
-      color: #C11E43;
+      color: #c11e43;
       font: 400 19px/27px "Jost", sans-serif;
       text-transform: uppercase;
     }
 
     &__text {
-      color: #1F262C;
+      color: #1f262c;
       font: 400 20px/29px "Montserrat", sans-serif;
     }
 
     &__button {
       width: 98px;
-      height: 4px;
+      height: 5px;
       background-color: rgba(193, 30, 67, 0.25);
       border-radius: 14px;
       border: none;
+      margin: 0 2px;
 
-      &--active {
-        background-color: #C11E43;
+      &--active,
+      &:hover {
+        cursor: pointer;
+        background-color: #c11e43;
       }
     }
   }

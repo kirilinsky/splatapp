@@ -3,7 +3,7 @@ import "./Header.scss";
 
 import logo from "../../assets/img/logo.png";
 
-const Header = ({ handlePageChange }) => {
+const Header = ({ handlePageChange, toggle }) => {
   return (
     <header className="header">
       <div className="container">
@@ -23,12 +23,17 @@ const Header = ({ handlePageChange }) => {
             >
               Для чего нужно
             </button>
-            <button onClick={() => handlePageChange(4)} className="navigation__item">
+            <button
+              onClick={() => handlePageChange(4)}
+              className="navigation__item"
+            >
               Попробовать
             </button>
           </nav>
 
-          <button className="button header__button">Скачать приложение</button>
+          <button onClick={toggle} className="button header__button">
+            Скачать приложение
+          </button>
         </div>
       </div>
     </header>

@@ -7,10 +7,10 @@ import appstore from "../../assets/img/appstore.svg";
 import googleplay from "../../assets/img/googleplay.svg";
 import { Header } from "../../components";
 
-const First = ({ handlePageChange }) => {
+const First = ({ toggle, handlePageChange }) => {
   return (
     <div className="view first">
-      <Header handlePageChange={handlePageChange} />
+      <Header toggle={toggle} handlePageChange={handlePageChange} />
       <div className="container">
         <div className="wrapper">
           <div className="download">
