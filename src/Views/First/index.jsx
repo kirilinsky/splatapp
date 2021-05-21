@@ -15,9 +15,8 @@ const First = ({ handlePageChange }) => {
         <div className="wrapper">
           <div className="download">
             <h1 className="main-title">
-              <span className="red">Скачайте</span> приложение для ухода за
-              полостью рта и <span className="red">попробуйте</span> на себе
-              разные оттенки зубов
+              <span className="red">Скачайте</span> приложение про отбеливание
+              зубов и <span className="red">подберите</span> себе лучшее решение
             </h1>
             <div className="markets">
               <img src={appstore} alt="Скачать с App Store" />
