@@ -56,4 +56,20 @@ body {
 .section-title {
   margin: 0;
   font: 700 53px/50px "Jost", sans-serif;
+
+  @media (max-width: 890px) {
+    font-size: 38px;
+    line-height: 36px;
+  }
+
+  @media (max-width: 587px) {
+    font-size: 26px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+
+input, button, input:focus, button:focus {
+  outline: none;
 }

@@ -5,15 +5,56 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 727px) {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    @media (max-width: 485px) {
+      justify-content: unset;
+    }
   }
 
   &__title {
     font: 700 45px/50px "Jost", sans-serif;
     max-width: 550px;
+
+    @media (max-width: 1205px) {
+      font-size: 38px;
+      line-height: 42px;
+    }
+
+    @media (max-width: 485px) {
+      font-size: 26px;
+      line-height: 29px;
+    }
+  }
+
+  &__smile {
+    @media (max-width: 1205px) {
+      width: 570px;
+    }
+
+    @media (max-width: 1051px) {
+      width: 426px;
+    }
+
+    @media (max-width: 513px) {
+      width: 430px;
+    }
+
+    @media (max-width: 485px) {
+      margin-top: 20px;
+    }
   }
 
   &-wrapper {
     height: 80vh;
+
+    @media (max-width: 649px) {
+      height: 67vh;
+    }
   }
 
   &-links {
@@ -21,5 +62,15 @@
     align-items: center;
     justify-content: space-between;
     max-width: 407px;
+
+    @media (max-width: 1051px) {
+      margin: 0 auto;
+    }
+
+    &__item {
+      @media (max-width: 1051px) {
+        width: 150px;
+      }
+    }
   }
 }

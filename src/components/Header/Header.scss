@@ -6,6 +6,20 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__logo {
+    @media(max-width: 411px) {
+      width: 60px;
+    }
+  }
+
+  &__button {
+    @media(max-width: 411px) {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 12px 30px;
+    }
+  }
 }
 
 .navigation {
@@ -22,5 +36,9 @@
     background: transparent;
     border: none;
     cursor: pointer;
+  }
+
+  @media (max-width: 997px) {
+    display: none;
   }
 }

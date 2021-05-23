@@ -8,7 +8,7 @@ const Header = ({ handlePageChange, toggle }) => {
     <header className="header">
       <div className="container">
         <div className="header-wrapper">
-          <img src={logo} className="Логотип SPLAT" />
+          <img src={logo} className="header__logo" alt="Логотип SPLAT" />
 
           <nav className="navigation">
             <button

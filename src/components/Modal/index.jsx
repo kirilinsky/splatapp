@@ -13,15 +13,15 @@ const ModalInner = ({ open, toggle }) => {
         <h1 className="main-title">
           <span className="red">Уже</span> скоро!
         </h1>
-        <p>
+        <p className="modalDescr">
           Приложение еще в процессе разработки, оставьте email, чтобы мы могли
           написать когда приложение станет доступно
         </p>
 
-        <input type="email" />
+        <input className="modalInput" type="email" placeholder="Email" />
 
-        <button className="button">Отправить</button>
-        <span>
+        <button className="button modalButton">Отправить</button>
+        <span className="modalInfo">
           Нажимая на кнопку, вы даете согласие на обработку своих персональных
           данных
         </span>

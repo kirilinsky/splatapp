@@ -30,6 +30,7 @@ const Third = () => {
                 <p className="work-steps__text">{slider[currentStep].text}</p>
                 {slider.map((x, i) => (
                   <button
+                    key={i}
                     disabled={x.id === slider[currentStep].id}
                     onClick={() => setCurrentStep(i)}
                     className={`work-steps__button work-steps__button${
@@ -40,10 +41,11 @@ const Third = () => {
               </div>
             </div>
             <div className="work-slider__right">
-               <img
+              <img
                 src={
                   imgs[currentStep]
                 }
+                className="work-slider__image"
                 onClick={nextSlide}
                 alt={slider[currentStep].text}
               />

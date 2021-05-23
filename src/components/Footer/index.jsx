@@ -13,12 +13,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <img src={logo} alt="Логотип SPLAT" />
+        <img className="footer__logo" src={logo} alt="Логотип SPLAT" />
         <div className="footer-socials">
-          <a href="#"><img src={vk} alt="Иконка: Вконтакте" /></a>
-          <a href="#"><img src={inst} alt="Иконка: Инстаграм" /></a>
-          <a href="#"><img src={fb} alt="Иконка: Facebook" /></a>
-          <a href="#"><img src={yt} alt="Иконка: Youtube" /></a>
+          <a className="footer-socials__link" href="#"><img src={vk} alt="Иконка: Вконтакте" /></a>
+          <a className="footer-socials__link" href="#"><img src={inst} alt="Иконка: Инстаграм" /></a>
+          <a className="footer-socials__link" href="#"><img src={fb} alt="Иконка: Facebook" /></a>
+          <a className="footer-socials__link" href="#"><img src={yt} alt="Иконка: Youtube" /></a>
         </div>
       </div>
       <div className="footer-bottom">
