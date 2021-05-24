@@ -18,9 +18,10 @@
       @media (max-width: 867px) {
         width: 313px;
       }
-      @media screen and (max-width: 550px) {
+      @media (max-width: 550px) {
         height: 50vh;
         width: auto;
+        margin-bottom: 20px;
       }
     }
   }
@@ -40,10 +41,10 @@
       height: 99px;
       font: 400 20px/29px "Montserrat", sans-serif;
       box-sizing: border-box;
-      @media screen and (max-width: 695px) {
+      @media (max-width: 695px) {
         height: 82px;
       }
-      @media screen and (max-width: 550px) {
+      @media (max-width: 550px) {
         font-size: 16px;
         line-height: 19px;
       }
