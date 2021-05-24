@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "./style.scss";
 
+import range from './assets/img/range.png';
 import smile_1 from "./assets/img/smile-1.png";
 import smile_2 from "./assets/img/smile-2.png";
 import smile_3 from "./assets/img/smile-3.png";
@@ -36,7 +37,7 @@ const Fourth = () => {
                 alt="Белоснежная улыбка"
               />
             </div>
-            {/*  <img className="try__range" src={range} alt="Степень отбеливания" /> */}
+            <img className="try__range" src={range} alt="Степень отбеливания" />
 
             <input
               min={0}
@@ -46,7 +47,6 @@ const Fourth = () => {
               onChange={(e) => setStep(e.target.value)}
               className="try-input"
               type="range"
-              defaultValue="0"
             />
           </div>
           <div className="try-right">
