@@ -21,10 +21,13 @@
     @media (max-width: 649px) {
       flex-direction: column;
     }
+    @media screen and (max-width: 410px) {
+      margin-bottom: 11px;
+    }
   }
 
   &-bottom {
-    @media(max-width: 649px) {
+    @media (max-width: 649px) {
       flex-direction: column;
     }
   }
@@ -71,6 +74,9 @@
 
       @media (max-width: 649px) {
         margin-bottom: 15px;
+      }
+      @media screen and (max-width: 410px) {
+        margin-bottom: 9px;
       }
     }
   }

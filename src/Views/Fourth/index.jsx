@@ -11,9 +11,19 @@ import smile_6 from "./assets/img/smile-6.png";
 import smile_7 from "./assets/img/smile-7.png";
 import smile_8 from "./assets/img/smile-8.png";
 
-const imgs = [smile_1, smile_2, smile_3, smile_4, smile_5, smile_6, smile_7, smile_8];
+const imgs = [
+  smile_1,
+  smile_2,
+  smile_3,
+  smile_4,
+  smile_5,
+  smile_6,
+  smile_7,
+  smile_8,
+];
 const Fourth = () => {
   const [step, setStep] = useState(0);
+
   return (
     <section className="view try">
       <div className="container">
@@ -26,7 +36,7 @@ const Fourth = () => {
                 alt="Белоснежная улыбка"
               />
             </div>
-            {/* <img className="try__range" src={range} alt="Степень отбеливания" /> */}
+            {/*  <img className="try__range" src={range} alt="Степень отбеливания" /> */}
 
             <input
               min={0}

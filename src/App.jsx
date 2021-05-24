@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactPageScroller from "react-page-scroller";
 
 import { First, Second, Third, Fourth, Compare } from "./Views";
@@ -20,16 +20,26 @@ function App() {
   return (
     <div className="App">
       <ModalInner open={open} toggle={toggle} />
-      <ReactPageScroller
-        customPageNumber={currentPage}
-        pageOnChange={handlePageChange}
-      >
-        <First toggle={toggle} handlePageChange={handlePageChange} />
-        <Second />
-        <Third />
-        <Fourth />
-        <Compare toggle={toggle} />
-      </ReactPageScroller>
+      {window.innerWidth >= 768 ? (
+        <ReactPageScroller
+          customPageNumber={currentPage}
+          pageOnChange={handlePageChange}
+        >
+          <First toggle={toggle} handlePageChange={handlePageChange} />
+          <Second />
+          <Third />
+          <Fourth />
+          <Compare toggle={toggle} />
+        </ReactPageScroller>
+      ) : (
+        <div className="m_mobile">
+          <First toggle={toggle} handlePageChange={handlePageChange} />
+          <Second />
+          <Third />
+          <Fourth />
+          <Compare toggle={toggle} />
+        </div>
+      )}
     </div>
   );
 }

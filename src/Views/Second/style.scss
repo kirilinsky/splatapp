@@ -1,5 +1,5 @@
 .opportunities {
-  background-color: #C11E43;
+  background-color: #c11e43;
 
   &-container {
     background-color: #fff;
@@ -7,11 +7,11 @@
     border-radius: 41px;
     padding: 90px;
 
-    @media(max-width: 806px) {
+    @media (max-width: 806px) {
       padding: 40px;
     }
 
-    @media(max-width: 429px) {
+    @media (max-width: 429px) {
       padding: 50px 7px;
     }
   }
@@ -27,7 +27,7 @@
       align-items: center;
       flex-basis: 48%;
 
-      @media(max-width: 806px) {
+      @media (max-width: 806px) {
         flex-basis: 100%;
       }
     }
@@ -36,17 +36,19 @@
       @media (max-width: 579px) {
         width: 130px;
       }
+      @media screen and (max-width: 488px) {
+        width: 95px;
+      }
     }
 
     &__text {
-      font: 400 18px/26px 'Montserrat', sans-serif;
+      font: 400 18px/26px "Montserrat", sans-serif;
       max-width: 325px;
 
-      @media(max-width: 900px) {
+      @media (max-width: 900px) {
         font-size: 14px;
         line-height: 20px;
       }
     }
-    
   }
 }

@@ -45,7 +45,10 @@
     }
 
     @media (max-width: 485px) {
-      margin-top: 20px;
+      margin-top: 0px;
+    }
+    @media screen and (max-width: 410px) {
+      display: none;
     }
   }
 
@@ -54,6 +57,10 @@
 
     @media (max-width: 649px) {
       height: 67vh;
+    }
+    @media screen and (max-width: 410px) {
+      justify-content: center;
+      height: 47vh;
     }
   }
 
@@ -70,6 +77,7 @@
     &__item {
       @media (max-width: 1051px) {
         width: 150px;
+        margin: 0 1px;
       }
     }
   }
