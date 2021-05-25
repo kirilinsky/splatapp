@@ -19,8 +19,8 @@ const First = ({ toggle, handlePageChange }) => {
               зубов и <span className="red">подберите</span> себе лучшее решение
             </h1>
             <div className="markets">
-              <img className="markets__item" src={appstore} alt="Скачать с App Store" />
-              <img className="markets__item" src={googleplay} alt="Скачать с Google Play" />
+              <img className="markets__item" src={appstore} alt="Скачать с App Store" onClick={toggle}/>
+              <img className="markets__item" src={googleplay} alt="Скачать с Google Play" onClick={toggle}/>
             </div>
           </div>
           <img

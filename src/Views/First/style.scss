@@ -34,6 +34,7 @@
   }
 
   &__item {
+    cursor: pointer;
     @media (max-width: 827px) {
       width: 154px;
     }

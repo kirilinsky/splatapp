@@ -3,6 +3,8 @@ import Drawer from "react-drag-drawer";
 
 import "./modal.scss";
 
+import personal from '../../assets/personal.pdf';
+
 const ModalInner = ({ open, toggle }) => {
   return (
     <Drawer className="modalWrapper" open={open} onRequestClose={toggle}>
@@ -22,8 +24,7 @@ const ModalInner = ({ open, toggle }) => {
 
         <button className="button modalButton">Отправить</button>
         <span className="modalInfo">
-          Нажимая на кнопку, вы даете согласие на обработку своих персональных
-          данных
+          Нажимая на кнопку, вы даете согласие на обработку своих <a className="modalInfo-link" href={personal} download target="_blank" rel="noopener noreferrer">персональных данных</a>
         </span>
       </div>
     </Drawer>

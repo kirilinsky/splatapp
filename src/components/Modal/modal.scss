@@ -74,4 +74,13 @@
   font: 400 10px/15px 'Montserrat', sans-serif;
   text-align: center;
   color: #1F262C40;
+
+  &-link {
+    color: #1F262C40;
+    @media (min-width: 991px) {
+      &:hover {
+        color: #1F262C;
+      }
+    }
+  }
 }
