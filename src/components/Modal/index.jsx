@@ -20,6 +20,7 @@ const ModalInner = ({ open, toggle }) => {
           написать когда приложение станет доступно
         </p>
 
+        <input className="modalInput" type="text" placeholder="Имя" />
         <input className="modalInput" type="email" placeholder="Email" />
 
         <button className="button modalButton">Отправить</button>

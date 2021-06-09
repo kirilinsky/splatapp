@@ -12,9 +12,9 @@ const Second = () => {
           <h2 className="section-title"><span className="red">Что</span> умеет приложение?</h2>
           <div className="opportunities-benefits">
             {
-              data.map(item => (
+              data.map((item, index) => (
                 <div className="opportunities-benefits__item" key={item.id}>
-                  <img className="opportunities-benefits__image" src={require(`./assets/img/${item.img}.svg`).default} alt={item.text} />
+                  <span className="opportunities-benefits__number">0{index+1}</span>
                   <span className="opportunities-benefits__text" >{item.text}</span>
                 </div>
               ))

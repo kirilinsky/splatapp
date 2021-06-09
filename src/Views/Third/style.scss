@@ -34,13 +34,15 @@
     }
 
     &__text {
-      color: #1f262c;
+      max-width: 555px;
+      height: 99px;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 99px;
       font: 400 20px/29px "Montserrat", sans-serif;
       box-sizing: border-box;
+      color: #1f262c;
+      
       @media (max-width: 695px) {
         height: 82px;
       }
