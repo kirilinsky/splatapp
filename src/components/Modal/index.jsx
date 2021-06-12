@@ -3,6 +3,8 @@ import Drawer from "react-drag-drawer";
 
 import "./modal.scss";
 
+import personal from '../../assets/personal.pdf';
+
 const ModalInner = ({ open, toggle }) => {
   const [sended, setSended] = useState(false);
   return (

@@ -18,9 +18,10 @@
       @media (max-width: 867px) {
         width: 313px;
       }
-      @media screen and (max-width: 550px) {
+      @media (max-width: 550px) {
         height: 50vh;
         width: auto;
+        margin-bottom: 20px;
       }
     }
   }
@@ -36,7 +37,8 @@
     }
 
     &__text {
-      color: #1f262c;
+      max-width: 555px;
+      height: 99px;
       display: flex;
       align-items: center;
       justify-content: center;

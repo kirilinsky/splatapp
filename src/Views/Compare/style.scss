@@ -102,6 +102,7 @@
     }
 
     &__item {
+      cursor: pointer;
       @media (max-width: 1051px) {
         width: 150px;
         margin: 0 1px;

@@ -52,8 +52,7 @@ const Fourth = () => {
           <div className="try-right">
             <h2 className="try-title">Попробуйте сейчас</h2>
             <span className="try-subtitle">
-              Перенесите ползунок, чтобы посмотреть на разные оттенки зубов по
-              шкале Vita
+            Водите ползунок, чтобы посмотреть на разные оттенки зубов по шкале Vita
             </span>
           </div>
         </div>

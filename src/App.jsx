@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ReactPageScroller from "react-page-scroller";
 
 import { First, Second, Third, Fourth, Compare } from "./Views";
-import { Header } from "./components";
 import ModalInner from "./components/Modal";
 
 function App() {

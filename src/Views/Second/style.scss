@@ -31,6 +31,7 @@
       display: flex;
       align-items: center;
       flex-basis: 48%;
+      margin: 19px 0px;
 
       @media (max-width: 806px) {
         flex-basis: 100%;
@@ -51,6 +52,18 @@
       }
       @media screen and (max-width: 488px) {
         width: 95px;
+      }
+    }
+
+    &__number {
+      font: 500 53px/50px "Jost", sans-serif;
+      color: #C11E43;
+      margin-right: 43px;
+
+      @media (max-width: 458px) {
+        font-size: 34px;
+        line-height: 32px;
+        margin-right: 20px;
       }
     }
 
