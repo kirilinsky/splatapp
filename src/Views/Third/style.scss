@@ -30,6 +30,9 @@
       color: #c11e43;
       font: 400 19px/27px "Jost", sans-serif;
       text-transform: uppercase;
+      @media screen and (max-width: 550px) {
+        margin: 9px 0;
+      }
     }
 
     &__text {
@@ -38,14 +41,19 @@
       align-items: center;
       justify-content: center;
       height: 99px;
+      width: 85%;
       font: 400 20px/29px "Montserrat", sans-serif;
       box-sizing: border-box;
+      @media screen and (max-width: 867px) {
+        width: 100%;
+      }
       @media screen and (max-width: 695px) {
         height: 82px;
       }
       @media screen and (max-width: 550px) {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 17px;
+        height: 67px;
       }
     }
 
@@ -69,4 +77,32 @@
 .m_mobile .view {
   min-height: 110vh;
   height: auto;
+}
+
+.arrows {
+  display: flex;
+  width: 100%;
+  @media screen and (max-width: 867px) {
+    justify-content: center;
+  }
+  .arrow {
+    width: 49px;
+    height: 49px;
+    opacity: 0.9;
+    &.left {
+      background: url("./assets/img/left.png") no-repeat;
+    }
+    &.right {
+      background: url("./assets/img/right.png") no-repeat;
+      margin-left: 15px;
+    }
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+    &.disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
 }

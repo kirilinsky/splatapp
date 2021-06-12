@@ -1,25 +1,54 @@
 .download {
-  height: 100vh;
-
+  height: 80vh;
+  position: relative;
+  .container {
+    height: 100%;
+  }
+  @media (max-width: 649px) {
+    height: calc(100vh - 33vh);
+  }
+  &-info {
+    z-index: 4;
+  }
   &-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 
+    &::after {
+      content: "";
+      position: absolute;
+      width: 130%;
+      height: 150%;
+      left: 21%;
+      top: 12%;
+      background: radial-gradient(
+        circle,
+        rgba(176, 10, 50, 0.3785889355742297) 0%,
+        rgba(255, 255, 255, 1) 65%
+      );
+      z-index: 1;
+      @media (max-width: 727px) {
+        left: 11%;
+        background: radial-gradient(
+          circle,
+          rgba(176, 10, 50, 0.3785889355742297) 0%,
+          rgba(255, 255, 255, 1) 35%
+        );
+      }
+    }
     @media (max-width: 727px) {
       text-align: center;
       flex-direction: column;
-    }
-
-    @media (max-width: 485px) {
-      justify-content: unset;
+      align-items: center;
     }
   }
 
   &__title {
     font: 700 45px/50px "Jost", sans-serif;
     max-width: 550px;
-
+    z-index: 4;
     @media (max-width: 1205px) {
       font-size: 38px;
       line-height: 42px;
@@ -32,6 +61,9 @@
   }
 
   &__smile {
+    align-self: flex-end;
+    position: relative;
+    z-index: 4;
     @media (max-width: 1205px) {
       width: 570px;
     }
@@ -48,20 +80,12 @@
       margin-top: 0px;
     }
     @media screen and (max-width: 410px) {
-      display: none;
+      width: 84%;
     }
   }
 
   &-wrapper {
     height: 80vh;
-
-    @media (max-width: 649px) {
-      height: 67vh;
-    }
-    @media screen and (max-width: 410px) {
-      justify-content: center;
-      height: 47vh;
-    }
   }
 
   &-links {
@@ -73,11 +97,18 @@
     @media (max-width: 1051px) {
       margin: 0 auto;
     }
+    @media screen and (max-width: 410px) {
+      flex-direction: column;
+    }
 
     &__item {
       @media (max-width: 1051px) {
         width: 150px;
         margin: 0 1px;
+      }
+      @media screen and (max-width: 410px) {
+        width: 88%;
+        margin: 5px 1px;
       }
     }
   }

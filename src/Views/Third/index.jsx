@@ -9,9 +9,19 @@ const imgs = [view1, view2, view3];
 const Third = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const nextSlide = () => {
-    console.log(currentStep);
+    if (currentStep === 2) {
+      return;
+    }
 
-    setCurrentStep(currentStep === slider.length - 1 ? 0 : currentStep + 1);
+    setCurrentStep(currentStep + 1);
+  };
+
+  const prevSlide = () => {
+    if (currentStep === 0) {
+      return;
+    }
+
+    setCurrentStep(currentStep - 1);
   };
   return (
     <section className="view work">
@@ -28,23 +38,25 @@ const Third = () => {
                   {slider[currentStep].step}
                 </h3>
                 <p className="work-steps__text">{slider[currentStep].text}</p>
-                {slider.map((x, i) => (
-                  <button
-                    key={i}
-                    disabled={x.id === slider[currentStep].id}
-                    onClick={() => setCurrentStep(i)}
-                    className={`work-steps__button work-steps__button${
-                      x.id === slider[currentStep].id ? "--active" : ""
+                <div className="arrows">
+                  <div
+                    className={`arrow left ${
+                      currentStep === 0 ? "disabled" : ""
                     }`}
-                  ></button>
-                ))}
+                    onClick={prevSlide}
+                  ></div>
+                  <div
+                    className={`arrow right ${
+                      currentStep === 2 ? "disabled" : ""
+                    }`}
+                    onClick={nextSlide}
+                  ></div>
+                </div>
               </div>
             </div>
             <div className="work-slider__right">
               <img
-                src={
-                  imgs[currentStep]
-                }
+                src={imgs[currentStep]}
                 className="work-slider__image"
                 onClick={nextSlide}
                 alt={slider[currentStep].text}

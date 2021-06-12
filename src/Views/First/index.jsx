@@ -15,12 +15,25 @@ const First = ({ toggle, handlePageChange }) => {
         <div className="wrapper">
           <div className="download">
             <h1 className="main-title">
-              <span className="red">Скачайте</span> приложение про отбеливание
-              зубов и <span className="red">подберите</span> себе лучшее решение
+              Выберите <span className="red">подходящее отбеливание</span> для
+              ваших зубов за 3 простых шага.
+              <br />
+              <span className="red">Скачайте приложение</span>, наведите камеру
+              на вашу улыбку и получите{" "}
+              <span className="red">профессиональные рекомендации</span> от
+              экспертов!
             </h1>
             <div className="markets">
-              <img className="markets__item" src={appstore} alt="Скачать с App Store" />
-              <img className="markets__item" src={googleplay} alt="Скачать с Google Play" />
+              <img
+                className="markets__item"
+                src={appstore}
+                alt="Скачать с App Store"
+              />
+              <img
+                className="markets__item"
+                src={googleplay}
+                alt="Скачать с Google Play"
+              />
             </div>
           </div>
           <img

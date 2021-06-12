@@ -1,6 +1,7 @@
 .footer {
-  height: 20vh;
-
+  flex-grow: 1;
+  background: #fff;
+  padding: 0 5%;
   @media (max-width: 649px) {
     display: flex;
     align-items: center;
