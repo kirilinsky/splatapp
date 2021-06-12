@@ -26,7 +26,7 @@
 
   @media (min-width: 991px) {
     &:hover {
-      color: #1F262C70;
+      color: #1f262c70;
     }
   }
 }
@@ -43,24 +43,24 @@
   margin: 0;
   margin-bottom: 22px;
   max-width: 605px;
-  font: 400 18px/26px 'Montserrat', sans-serif;
+  font: 400 18px/26px "Montserrat", sans-serif;
   text-align: center;
-  color: #1F262C;
+  color: #1f262c;
 }
 
 .modalInput {
   max-width: 306px;
   width: 100%;
-  font: 400 16px/23px 'Montserrat', sans-serif;
+  font: 400 16px/23px "Montserrat", sans-serif;
   padding: 14px 20px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   border-radius: 6px;
   border: none;
   margin-bottom: 22px;
-  color: #1F262C;
+  color: #1f262c;
 
   &::placeholder {
-    color: #1F262C40;
+    color: #1f262c40;
   }
 }
 
@@ -71,7 +71,14 @@
 
 .modalInfo {
   max-width: 289px;
-  font: 400 10px/15px 'Montserrat', sans-serif;
+  font: 400 10px/15px "Montserrat", sans-serif;
   text-align: center;
-  color: #1F262C40;
+  color: #1f262c40;
+}
+
+.padded {
+  padding: 22%;
+  text-align: center;
+  width: 77vw;
+  height: 32vh;
 }

@@ -7,7 +7,7 @@ const ModalInner = ({ open, toggle }) => {
   const [sended, setSended] = useState(false);
   return (
     <Drawer className="modalWrapper" open={open} onRequestClose={toggle}>
-      {!sended ? (
+      {sended ? (
         <div className="modalInner">
           <button onClick={toggle} className="close-modal">
             &times;
@@ -29,11 +29,11 @@ const ModalInner = ({ open, toggle }) => {
           </span>
         </div>
       ) : (
-        <div className="modalInner">
+        <div className="modalInner padded">
           <h1>Спасибо</h1>
           <p>Как только приложение появится, мы напишем вам!</p>
 
-          <button>Хорошо</button>
+          <button className="button modalButton">Хорошо</button>
         </div>
       )}
     </Drawer>
