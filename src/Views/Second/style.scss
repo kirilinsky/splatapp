@@ -1,0 +1,80 @@
+.opportunities {
+  background-color: #c11e43;
+
+  &-container {
+    background-color: #fff;
+    box-shadow: 0px 38px 43px rgba(0, 0, 0, 0.07);
+    border-radius: 41px;
+    padding: 99px;
+    min-height: 35vh;
+    min-width: 66vw;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 806px) {
+      padding: 40px;
+    }
+
+    @media (max-width: 429px) {
+      padding: 50px 7px;
+    }
+  }
+
+  &-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    flex-grow: 1;
+    &__item {
+      display: flex;
+      align-items: center;
+      flex-basis: 48%;
+      margin: 19px 0px;
+
+      @media (max-width: 806px) {
+        flex-basis: 100%;
+      }
+    }
+
+    &__image {
+      width: 59px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c11e43;
+      font: 700 48px/57px "Jost", sans-serif;
+      margin: 25px;
+      @media (max-width: 579px) {
+        width: 130px;
+      }
+      @media screen and (max-width: 488px) {
+        width: 95px;
+      }
+    }
+
+    &__number {
+      font: 500 53px/50px "Jost", sans-serif;
+      color: #C11E43;
+      margin-right: 43px;
+
+      @media (max-width: 458px) {
+        font-size: 34px;
+        line-height: 32px;
+        margin-right: 20px;
+      }
+    }
+
+    &__text {
+      font: 400 18px/26px "Montserrat", sans-serif;
+      max-width: 325px;
+
+      @media (max-width: 900px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.modalInner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  max-width: 700px;
+  height: 430px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0px 32px 31px 32px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.close-modal {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: #b9c3c6;
+  font-size: 55px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: color 0.2s linear;
+
+  @media (min-width: 991px) {
+    &:hover {
+      color: #1f262c70;
+    }
+  }
+}
+
+.modalWrapper {
+  width: 77vw;
+  height: 77vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalDescr {
+  margin: 0;
+  margin-bottom: 22px;
+  max-width: 605px;
+  font: 400 18px/26px "Montserrat", sans-serif;
+  text-align: center;
+  color: #1f262c;
+}
+
+.modalInput {
+  max-width: 306px;
+  width: 100%;
+  font: 400 16px/23px "Montserrat", sans-serif;
+  padding: 14px 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 22px;
+  color: #1f262c;
+
+  &::placeholder {
+    color: #1f262c40;
+  }
+}
+
+.modalButton {
+  padding: 14px 96px;
+  margin-bottom: 22px;
+}
+
+.modalInfo {
+  max-width: 289px;
+  font: 400 10px/15px "Montserrat", sans-serif;
+  text-align: center;
+  color: #1f262c40;
+}
+
+.padded {
+  padding: 22%;
+  text-align: center;
+  width: 77vw;
+  height: 32vh;
+}

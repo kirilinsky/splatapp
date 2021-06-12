@@ -1,18 +1,14 @@
 body {
-  margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: "Jost", "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #ffffff;
+  color: #1f262c;
 }
 
 .App {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .view {
@@ -20,9 +16,10 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  align-self: flex-end;
   align-items: center;
   justify-content: center;
-  & > div {
+  & > div:not(.container) {
     width: 100%;
     height: 100%;
   }
@@ -30,18 +27,52 @@ body {
 
 /* container style */
 .container {
-  width: 88%;
+  width: 90%;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-/* logo */
-.logo {
-  position: fixed;
-  top: 0;
-  left: 58px;
-  width: 60px;
-  height: 60px;
-  background: red;
-  z-index: 99;
+/* buttons */
+
+.button {
+  background: #c11e43;
+  border-radius: 100px;
+  border: none;
+  padding: 22px 36px;
+  color: #ffffff;
+  font: 500 16px/20px "Montserrat", sans-serif;
+  cursor: pointer;
+  @media (min-width: 991px) {
+    &:hover {
+      box-shadow: 0px 12px 46px -18px #e40d21;
+    }
+  }
+}
+
+.red {
+  color: #c11e43;
+}
+
+.section-title {
+  margin: 0;
+  font: 700 53px/50px "Jost", sans-serif;
+
+  @media (max-width: 890px) {
+    font-size: 38px;
+    line-height: 36px;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 587px) {
+    font-size: 26px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+input,
+button,
+input:focus,
+button:focus {
+  outline: none;
 }
