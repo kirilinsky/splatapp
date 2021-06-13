@@ -61,8 +61,9 @@
   max-width: 490px;
   height: 81%;
   margin: 3px 1px;
-  @media (max-width: 815px) {
+  @media (max-width: 825px) {
     height: 79%;
+    max-width: 185px;
   }
   @media screen and (max-width: 550px) {
    height: 61%;
