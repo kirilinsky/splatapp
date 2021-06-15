@@ -3,13 +3,13 @@ import Drawer from "react-drag-drawer";
 
 import "./modal.scss";
 
-import personal from '../../assets/personal.pdf';
+import personal from "../../assets/personal.pdf";
 
 const ModalInner = ({ open, toggle }) => {
   const [sended, setSended] = useState(false);
   return (
     <Drawer className="modalWrapper" open={open} onRequestClose={toggle}>
-      {sended ? (
+      {!sended ? (
         <div className="modalInner">
           <button onClick={toggle} className="close-modal">
             &times;
@@ -24,7 +24,12 @@ const ModalInner = ({ open, toggle }) => {
 
           <input className="modalInput" type="text" placeholder="Имя" />
           <input className="modalInput" type="email" placeholder="Email" />
-          <button className="button modalButton">Отправить</button>
+          <button
+            className="button modalButton"
+            onClick={() => setSended(true)}
+          >
+            Отправить
+          </button>
           <span className="modalInfo">
             Нажимая на кнопку, вы даете согласие на обработку своих персональных
             данных
@@ -35,7 +40,12 @@ const ModalInner = ({ open, toggle }) => {
           <h1>Спасибо</h1>
           <p>Как только приложение появится, мы напишем вам!</p>
 
-          <button className="button modalButton">Хорошо</button>
+          <button
+            className="button modalButton"
+            onClick={() => setSended(false)}
+          >
+            Хорошо
+          </button>
         </div>
       )}
     </Drawer>
