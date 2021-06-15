@@ -15,8 +15,11 @@
     }
 
     &__image {
+      width: 335px;
+      height: 666px;
       @media (max-width: 867px) {
-        width: 313px;
+        width: 170px;
+        height: unset;
       }
       @media (max-width: 550px) {
         height: 50vh;

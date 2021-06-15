@@ -3,6 +3,7 @@
   background: #fff;
   padding: 0 5%;
   padding-bottom: 30px;
+
   @media (max-width: 649px) {
     display: flex;
     align-items: center;
@@ -19,7 +20,7 @@
   }
 
   &-top {
-    margin-bottom: 22px;
+    margin-bottom: 10px;
     @media (max-width: 649px) {
       flex-direction: column;
     }
