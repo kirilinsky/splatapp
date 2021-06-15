@@ -40,7 +40,12 @@ const ModalInner = ({ open, toggle }) => {
           <h1>Спасибо</h1>
           <p>Как только приложение появится, мы напишем вам!</p>
 
-          <button className="button modalButton">Хорошо</button>
+          <button
+            className="button modalButton"
+            onClick={() => setSended(false)}
+          >
+            Хорошо
+          </button>
         </div>
       )}
     </Drawer>
