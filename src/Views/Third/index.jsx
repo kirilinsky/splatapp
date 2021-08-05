@@ -29,7 +29,7 @@ const Third = () => {
         <div className="work-container">
           <div className="work-slider">
             <div className="work-slider__left">
-              <h2 className="section-title">
+              <h2 className="section-title work__title">
                 <span className="red">Как</span> это работает?
               </h2>
 

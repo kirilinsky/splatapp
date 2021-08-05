@@ -61,18 +61,26 @@
   max-width: 490px;
   height: 81%;
   margin: 3px 1px;
-  @media (max-width: 815px) {
-    height: 79%;
+  @media (max-width: 820px) {
+    display: none;
   }
   @media screen and (max-width: 550px) {
-   height: 61%;
+    height: 61%;
   }
 }
 .view.first {
   flex-direction: column;
   display: flex;
   justify-content: flex-start;
+
+  @media (max-width: 820px) {
+    height: 30vh;
+  }
   .wrapper {
     height: calc(100vh - 100px);
+
+    @media (max-width: 820px) {
+      height: unset;
+    }
   }
 }

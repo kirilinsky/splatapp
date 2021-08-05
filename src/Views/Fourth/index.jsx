@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./style.scss";
 
-import range from './assets/img/range.png';
+import range from "./assets/img/range.png";
 import smile_1 from "./assets/img/smile-1.png";
 import smile_2 from "./assets/img/smile-2.png";
 import smile_3 from "./assets/img/smile-3.png";
@@ -52,7 +52,8 @@ const Fourth = () => {
           <div className="try-right">
             <h2 className="try-title">Попробуйте сейчас</h2>
             <span className="try-subtitle">
-            Водите ползунок, чтобы посмотреть на разные оттенки зубов по шкале Vita
+              Водите ползунок, чтобы посмотреть на разные оттенки зубов по шкале
+              Vita
             </span>
           </div>
         </div>

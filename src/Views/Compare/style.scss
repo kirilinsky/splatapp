@@ -1,6 +1,11 @@
 .download {
   height: 80vh;
   position: relative;
+
+  &-red {
+    background-color: #fff;
+  }
+
   .container {
     height: 100%;
   }

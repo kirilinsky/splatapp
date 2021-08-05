@@ -53,6 +53,10 @@ body {
   color: #c11e43;
 }
 
+.white {
+  color: #ffffff;
+}
+
 .section-title {
   margin: 0;
   font: 700 53px/50px "Jost", sans-serif;
@@ -75,4 +79,14 @@ button,
 input:focus,
 button:focus {
   outline: none;
+}
+
+.m_mobile .view {
+  min-height: 110vh;
+  height: auto;
+
+  @media (max-width: 820px) {
+    min-height: unset;
+    height: unset;
+  }
 }

@@ -25,7 +25,7 @@ function App() {
           pageOnChange={handlePageChange}
         >
           <First toggle={toggle} handlePageChange={handlePageChange} />
-          <Second />
+          {/* <Second /> */}
           <Third />
           <Fourth />
           <Compare toggle={toggle} />
@@ -33,7 +33,7 @@ function App() {
       ) : (
         <div className="m_mobile">
           <First toggle={toggle} handlePageChange={handlePageChange} />
-          <Second />
+          {/* <Second /> */}
           <Third />
           <Fourth />
           <Compare toggle={toggle} />

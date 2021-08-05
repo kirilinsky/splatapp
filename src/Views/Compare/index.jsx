@@ -10,7 +10,7 @@ import smile from "./assets/img/photo-smile.png";
 const Compare = ({ toggle }) => {
   return (
     <>
-      <section className="view download">
+      <section className="view download download-red">
         <div className="container">
           <div className="download-wrapper">
             <div className="download-info">

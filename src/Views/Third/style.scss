@@ -1,4 +1,15 @@
 .work {
+  background-color: #fff;
+  @media (max-width: 820px) {
+    padding: 30px 0;
+  }
+
+  &__title {
+    @media (max-width: 820px) {
+      display: none;
+    }
+  }
+
   &-slider {
     display: flex;
     align-items: center;
@@ -46,6 +57,7 @@
       width: 85%;
       font: 400 20px/29px "Montserrat", sans-serif;
       box-sizing: border-box;
+      color: #000;
       @media screen and (max-width: 867px) {
         width: 100%;
       }
@@ -74,11 +86,6 @@
       }
     }
   }
-}
-
-.m_mobile .view {
-  min-height: 110vh;
-  height: auto;
 }
 
 .arrows {
