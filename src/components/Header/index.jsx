@@ -2,13 +2,18 @@ import React from "react";
 import "./Header.scss";
 
 import logo from "../../assets/img/logo.png";
+import { googleHandle } from "../../helpers";
 
 const Header = ({ handlePageChange, toggle }) => {
   return (
     <header className="header">
       <div className="container">
         <div className="header-wrapper">
-          <a href="http://splat.ru/?utm_source=web&utm_medium=organic&utm_campaign=site_app_splat&utm_content=logo" target="_blank" rel="noopener noreferrer">
+          <a
+            href="http://splat.ru/?utm_source=web&utm_medium=organic&utm_campaign=site_app_splat&utm_content=logo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={logo} className="header__logo" alt="Логотип SPLAT" />
           </a>
 
@@ -33,7 +38,13 @@ const Header = ({ handlePageChange, toggle }) => {
             </button>
           </nav>
 
-          <button onClick={toggle} className="button header__button">
+          <button
+            onClick={() => {
+              googleHandle("header__button");
+              toggle();
+            }}
+            className="button header__button"
+          >
             Скачать приложение
           </button>
         </div>

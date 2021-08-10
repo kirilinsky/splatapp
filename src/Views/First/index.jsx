@@ -1,11 +1,11 @@
 import React from "react";
-
-import "./style.scss";
-
-import phone from "./assets/img/phone.png";
 import appstore from "../../assets/img/appstore.svg";
 import googleplay from "../../assets/img/googleplay.svg";
 import { Header } from "../../components";
+import phone from "./assets/img/phone.png";
+import "./style.scss";
+
+import { googleHandle } from "../../helpers";
 
 const First = ({ toggle, handlePageChange }) => {
   return (
@@ -22,14 +22,16 @@ const First = ({ toggle, handlePageChange }) => {
             </h1>
             <div className="markets">
               <img
-                className="markets__item"
+                className="markets__item appstore"
                 src={appstore}
                 alt="Скачать с App Store"
+                onClick={() => googleHandle("appstore")}
               />
               <img
-                className="markets__item"
+                className="markets__item googleplay"
                 src={googleplay}
                 alt="Скачать с Google Play"
+                onClick={() => googleHandle("googleplay")}
               />
             </div>
           </div>

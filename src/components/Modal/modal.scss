@@ -5,20 +5,25 @@
   justify-content: space-evenly;
   flex-direction: column;
   max-width: 700px;
-  height: 430px;
+  max-height: 630px;
   background: #ffffff;
   border-radius: 12px;
   padding: 0px 32px 31px 32px;
   width: 80%;
   margin: 0 auto;
+  @media (max-width: 700px) {
+    width: 80%;
+  }
+  @media (max-width: 320px) {
+    width: 69%;
+  }
 }
 
 .close-modal {
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: 10px;
+  right: 5px;
   color: #b9c3c6;
-  font-size: 55px;
   cursor: pointer;
   background: transparent;
   border: none;
@@ -27,6 +32,13 @@
   @media (min-width: 991px) {
     &:hover {
       color: #1f262c70;
+    }
+  }
+
+  @media (max-width: 375px) {
+    img {
+      width: 15px;
+      height: 15px;
     }
   }
 }
@@ -42,10 +54,15 @@
 .modalDescr {
   margin: 0;
   margin-bottom: 22px;
-  max-width: 605px;
+  max-width: 520px;
   font: 400 18px/26px "Montserrat", sans-serif;
   text-align: center;
   color: #1f262c;
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+    line-height: 17px;
+  }
 }
 
 .modalInput {
@@ -54,10 +71,57 @@
   font: 400 16px/23px "Montserrat", sans-serif;
   padding: 14px 20px;
   background-color: #f9f9f9;
+  box-sizing: border-box;
   border-radius: 6px;
   border: none;
   margin-bottom: 22px;
   color: #1f262c;
+  &-box {
+    position: relative;
+
+    &.invalid {
+      border-radius: 18px;
+
+      .modalInput-box__valid {
+        opacity: 1;
+        transition: 0.3s;
+      }
+      .modalInput-box__input {
+        background-color: #ffecf0;
+      }
+    }
+    &.hasChanged {
+      .modalInput-box__label {
+        transform: translateY(-162%) scale(0.8);
+        opacity: 1;
+        color: #000;
+      }
+    }
+
+    &__label {
+      position: absolute;
+      left: 25px;
+      top: calc(50% - 11px);
+      transform: translateY(-50%);
+      transform-origin: bottom left;
+      opacity: 0.8;
+      pointer-events: none;
+      transition: 0.3s;
+      color: #444;
+      padding: 2px 5px;
+    }
+    &__valid {
+      position: absolute;
+      bottom: 13%;
+      left: 25px;
+      color: #db1f21;
+      background-color: #f4f4f4;
+      opacity: 0;
+      padding: 2px 5px;
+      transition: 0.2s;
+      border-radius: 18px;
+    }
+  }
 
   &::placeholder {
     color: #1f262c40;
@@ -77,7 +141,9 @@
 }
 
 .padded {
-  padding: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   width: 77vw;
   height: 32vh;

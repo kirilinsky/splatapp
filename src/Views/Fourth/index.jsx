@@ -12,6 +12,8 @@ import smile_6 from "./assets/img/smile-6.png";
 import smile_7 from "./assets/img/smile-7.png";
 import smile_8 from "./assets/img/smile-8.png";
 
+import { googleHandle } from "../../helpers";
+
 const imgs = [
   smile_1,
   smile_2,
@@ -44,7 +46,10 @@ const Fourth = () => {
               max={7}
               step={1}
               value={step}
-              onChange={(e) => setStep(e.target.value)}
+              onChange={(e) => {
+                setStep(e.target.value);
+                googleHandle("try-input");
+              }}
               className="try-input"
               type="range"
             />
