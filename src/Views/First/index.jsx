@@ -25,13 +25,19 @@ const First = ({ toggle, handlePageChange }) => {
                 className="markets__item appstore"
                 src={appstore}
                 alt="Скачать с App Store"
-                onClick={() => googleHandle("appstore")}
+                onClick={() => {
+                  googleHandle("appstore");
+                  toggle();
+                }}
               />
               <img
                 className="markets__item googleplay"
                 src={googleplay}
                 alt="Скачать с Google Play"
-                onClick={() => googleHandle("googleplay")}
+                onClick={() => {
+                  googleHandle("googleplay");
+                  toggle();
+                }}
               />
             </div>
           </div>

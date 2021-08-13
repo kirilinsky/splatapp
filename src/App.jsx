@@ -10,6 +10,7 @@ function App() {
   const toggle = () => {
     setOpen(!open);
   };
+
   const handlePageChange = (number) => {
     if (number === currentPage) return;
 

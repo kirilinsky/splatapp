@@ -1,9 +1,11 @@
 import React from "react";
 import appstore from "../../assets/img/appstore.svg";
-import googleplay from "../../assets/img/googleplay.svg";
+import googleplayImg from "../../assets/img/googleplay.svg";
 import { Footer } from "../../components";
 import smile from "./assets/img/photo-smile.png";
 import "./style.scss";
+
+import { googleHandle } from "../../helpers";
 
 const Compare = ({ toggle }) => {
   return (
@@ -19,18 +21,22 @@ const Compare = ({ toggle }) => {
               </h2>
               <div className="download-links">
                 <img
-                  onClick={toggle}
                   className="download-links__item appstore"
                   src={appstore}
                   alt="Скачать с AppStore"
-                  onClick={() => googleplay("appstore")}
+                  onClick={() => {
+                    googleHandle("appstore");
+                    toggle();
+                  }}
                 />
                 <img
-                  onClick={toggle}
                   className="download-links__item googleplay"
-                  src={googleplay}
+                  src={googleplayImg}
                   alt="Скачать с GooglePlay"
-                  onClick={() => googleplay("googleplay")}
+                  onClick={() => {
+                    googleHandle("googleplay");
+                    toggle();
+                  }}
                 />
               </div>
             </div>

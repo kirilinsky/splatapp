@@ -19,19 +19,19 @@ const Header = ({ handlePageChange, toggle }) => {
 
           <nav className="navigation">
             <button
-              onClick={() => handlePageChange(2)}
+              onClick={() => handlePageChange(0)}
               className="navigation__item"
             >
               О приложении
             </button>
             <button
-              onClick={() => handlePageChange(3)}
+              onClick={() => handlePageChange(1)}
               className="navigation__item"
             >
               Как это работает
             </button>
             <button
-              onClick={() => handlePageChange(4)}
+              onClick={() => handlePageChange(2)}
               className="navigation__item"
             >
               Попробовать
